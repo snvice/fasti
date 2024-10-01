@@ -4,7 +4,7 @@ import pandas as pd
 
 app = FastAPI()
 
-df = pd.read_csv('data/FuelConsumption.csv')
+df = pd.read_csv('https://github.com/snvice/fasti/blob/main/FuelConsumption.csv')
 columns = df.columns
 cars = df.to_dict(orient='records')
 
